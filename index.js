@@ -7,9 +7,9 @@ const fs = require('fs')
 //Port sur lequel on écoute notre serveur
 const port = 3000
 
-//Céation du serveur, createServer() prends une fonction aves 2 parametres (req et res)
-// Ici dans la fonction, on va grèrer l'activité du serveur.
-//A chaque fois qu'un page est requêtée sur notre serveur, la fonction sera appelée
+//Céation du serveur, createServer() prend une fonction avec 2 parametres (req et res)
+// Ici dans la fonction, on va gèrer l'activité du serveur.
+//A chaque fois qu'une page est requêtée sur notre serveur, la fonction sera appelée
 const server = http.createServer(function(req, res){
 
     // On dit au navigateur qu'on va lui passer du HTML.
@@ -37,7 +37,7 @@ const server = http.createServer(function(req, res){
 })
 
 
-// Mise en place su serveur pour qu'il se branche sur le port voulu.
+// Mise en place du serveur pour qu'il se branche sur le port voulu.
 //La methode listen() prend une fonction qui va etre appelée s'il y a une erreur
 //Dès que notre serveur est en route il va appelé cette fonction et va passer une erreur ou rien.
 server.listen(port, function(error){
